@@ -2,8 +2,10 @@
 body {
   background: hsl(185, 75%, 39%);
   font-family: "Kumbh Sans", sans-serif;
-  font-size: 18px;
   color: hsl(227, 10%, 46%);
+  height: 100%;
+  margin: 0 auto;
+
 }
 
 .dark-blue {
@@ -26,6 +28,7 @@ p {
 .container {
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 /* card profile container */
@@ -36,10 +39,14 @@ p {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
+
+  font-size: 18px;
   text-align: center;
-  width: 25rem;
-  margin: auto;
+  width: 23rem;
+  margin: auto ;
   border-radius: 5%;
+
+
 
   background: url("images/bg-pattern-card.svg") no-repeat;
   background-size: 100% 40%;
@@ -52,8 +59,8 @@ p {
   background-image: url("images/bg-pattern-card.svg");
   padding: 4.5rem;
   margin-bottom: -3.5rem;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 /* card-1 */
@@ -96,4 +103,14 @@ p {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+/* media queries */
+@media (max-width: 375px) {
+   .card {
+    width: 90%;
+   }
+
+  
 }
